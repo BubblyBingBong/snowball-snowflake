@@ -27,23 +27,16 @@ Baselines: AdamW, Muon, Newton-Muon (Du & Su, arXiv 2604.01472). All experiments
 | `snowflake_diag.py` | Snowflake effective-scaling distribution and second-moment estimate error | `results/snowflake_diag/` |
 | `snowflake_oracle.py` | Snowflake with an exact (oracle) second moment and with `M = I` (diagnosis, hypothesis 2) | `results/snowflake_oracle/` |
 | `snowflake_direction.py` | One-step direction test and gradient SNR along input eigendirections | `results/snowflake_direction/` |
+| `prepare_data.py` | Downloads MNIST and CIFAR-10 into `data/` | `data/` |
+| `make_tables.py` | Prints the numbers in every table | stdout |
+| `condition_number.py` | Condition numbers of the damped metric quoted in Results | stdout |
 | `paper_diag_plot.py` | Diagnosis figure (Appendix C) from the saved results above | `results/paper/snowflake_diagnosis.pdf` |
 
 Sweep caches (`results/**/runs/`) are not included; the scripts recreate them.
 
 ## Reproducing
 
-```bash
-pip install -r requirements.txt
-python optim_compare.py --dataset mnist      # and --dataset cifar10
-python input_aware.py   --dataset mnist --methods iamuon
-python ext_damping.py && python paper_runs.py && python paper_plot.py
-python mnist_muon.py && python snowflake_oracle.py --dataset cifar10 && python paper_diag_plot.py
-```
-
-MNIST is downloaded by torchvision into `data/`. CIFAR-10 is read from `data/cifar10.pt`, a dict
-`{"train": (X, y), "test": (X, y)}` with `X` a uint8 tensor of shape `(N, 32, 32, 3)` and `y` an int64 label tensor,
-built from https://huggingface.co/datasets/uoft-cs/cifar10. The 5,000-image validation split is a fixed random subset
-of the training set, so a different source order gives a different split.
+See [REPRODUCE.md](REPRODUCE.md): tables and figures from the saved results take under a minute, and
+`./reproduce.sh` reruns every experiment from scratch.
 
 All runs used one NVIDIA RTX 5090 in fp32 (TF32 disabled), PyTorch 2.15.
