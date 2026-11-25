@@ -1,17 +1,15 @@
 #!/usr/bin/env bash
-# Reproduce every experiment, figure and table of the report (about 3 hours on one RTX 5090).
+# Rerun every experiment, figure and table of the report (about 3 hours on one RTX 5090). Run from the repo root.
 set -euo pipefail
-python prepare_data.py                                   # MNIST + CIFAR-10 into data/
+python prepare_data.py
 for ds in mnist cifar10; do
-  python optim_compare.py   --dataset $ds                # AdamW / Muon / Newton-Muon / Snowflake sweeps
-  python input_aware.py     --dataset $ds --methods iamuon   # Snowball sweep
-  python snowflake_diag.py  --dataset $ds                # effective scaling, estimate error
-  python snowflake_oracle.py --dataset $ds               # exact-M and M = I variants
+  python -m experiments.sweep --dataset $ds
+  python -m experiments.snowflake_diag --dataset $ds
+  python -m experiments.snowflake_oracle --dataset $ds
 done
-python ext_damping.py                                    # extended damping grids -> final selections
-python paper_runs.py                                     # 3-seed final runs (main results table)
-python mnist_muon.py                                     # Muon effective-scaling ratio (diagnosis panel a)
-python paper_plot.py                                     # loss-curve figure
-python paper_diag_plot.py                                # diagnosis figure
-python condition_number.py                               # condition numbers quoted in Results
-python make_tables.py                                    # numbers for every table
+python -m experiments.final_runs
+python -m experiments.effective_scaling
+python -m plots.loss_curves
+python -m plots.snowflake_diagnosis
+python -m analysis.condition_number
+python -m analysis.tables

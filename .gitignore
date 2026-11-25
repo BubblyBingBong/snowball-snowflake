@@ -1,5 +1,6 @@
-data/
+data
 __pycache__/
 .venv/
-results/**/runs/
+results/sweeps/runs/
+results/diagnosis/runs/
 *.pyc
