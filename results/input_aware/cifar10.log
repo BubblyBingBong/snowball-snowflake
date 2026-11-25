@@ -1,0 +1,91 @@
+[cifar10] iamuon     lr=0.005, wd=0.3, gamma=0.05   val_loss=1.4943 val_acc=50.34%
+[cifar10] iamuon     lr=0.005, wd=0.3, gamma=0.2    val_loss=1.4239 val_acc=53.74%
+[cifar10] iamuon     lr=0.005, wd=0.3, gamma=1      val_loss=1.3648 val_acc=56.02%
+[cifar10] iamuon     lr=0.005, wd=0.3, gamma=5      val_loss=1.2856 val_acc=57.40%
+[cifar10] iamuon     lr=0.01, wd=0.3, gamma=0.05    val_loss=1.4948 val_acc=51.04%
+[cifar10] iamuon     lr=0.01, wd=0.3, gamma=0.2     val_loss=1.4280 val_acc=53.90%
+[cifar10] iamuon     lr=0.01, wd=0.3, gamma=1       val_loss=1.3539 val_acc=56.50%
+[cifar10] iamuon     lr=0.01, wd=0.3, gamma=5       val_loss=1.2897 val_acc=57.50%
+[cifar10] iamuon     lr=0.02, wd=0.3, gamma=0.05    val_loss=1.4722 val_acc=51.66%
+[cifar10] iamuon     lr=0.02, wd=0.3, gamma=0.2     val_loss=1.4100 val_acc=54.18%
+[cifar10] iamuon     lr=0.02, wd=0.3, gamma=1       val_loss=1.3291 val_acc=56.78%
+[cifar10] iamuon     lr=0.02, wd=0.3, gamma=5       val_loss=1.2553 val_acc=58.16%
+[cifar10] iamuon     lr=0.05, wd=0.3, gamma=0.05    val_loss=1.4397 val_acc=52.24%
+[cifar10] iamuon     lr=0.05, wd=0.3, gamma=0.2     val_loss=1.3853 val_acc=55.06%
+[cifar10] iamuon     lr=0.05, wd=0.3, gamma=1       val_loss=1.3034 val_acc=57.52%
+[cifar10] iamuon     lr=0.05, wd=0.3, gamma=5       val_loss=1.2232 val_acc=58.46%
+[cifar10] iamuon     lr=0.1, wd=0.3, gamma=0.05     val_loss=1.4549 val_acc=52.24%
+[cifar10] iamuon     lr=0.1, wd=0.3, gamma=0.2      val_loss=1.4001 val_acc=53.94%
+[cifar10] iamuon     lr=0.1, wd=0.3, gamma=1        val_loss=1.3115 val_acc=57.60%
+[cifar10] iamuon     lr=0.1, wd=0.3, gamma=5        val_loss=1.2374 val_acc=59.02%
+[cifar10] BEST iamuon: lr=0.05, wd=0.3, gamma=5  val_loss 1.2232
+[cifar10] partial    lr=0.005, wd=0.3, gamma=0.05   val_loss=1.3303 val_acc=56.46%
+[cifar10] partial    lr=0.005, wd=0.3, gamma=0.2    val_loss=1.3065 val_acc=56.68%
+[cifar10] partial    lr=0.005, wd=0.3, gamma=1      val_loss=1.2719 val_acc=57.56%
+[cifar10] partial    lr=0.005, wd=0.3, gamma=5      val_loss=1.2416 val_acc=58.14%
+[cifar10] partial    lr=0.01, wd=0.3, gamma=0.05    val_loss=1.3376 val_acc=55.66%
+[cifar10] partial    lr=0.01, wd=0.3, gamma=0.2     val_loss=1.3090 val_acc=56.44%
+[cifar10] partial    lr=0.01, wd=0.3, gamma=1       val_loss=1.2837 val_acc=57.24%
+[cifar10] partial    lr=0.01, wd=0.3, gamma=5       val_loss=1.2585 val_acc=57.74%
+[cifar10] partial    lr=0.02, wd=0.3, gamma=0.05    val_loss=1.2777 val_acc=57.44%
+[cifar10] partial    lr=0.02, wd=0.3, gamma=0.2     val_loss=1.2680 val_acc=57.28%
+[cifar10] partial    lr=0.02, wd=0.3, gamma=1       val_loss=1.2219 val_acc=58.54%
+[cifar10] partial    lr=0.02, wd=0.3, gamma=5       val_loss=1.2083 val_acc=59.20%
+[cifar10] partial    lr=0.05, wd=0.3, gamma=0.05    val_loss=1.2460 val_acc=57.74%
+[cifar10] partial    lr=0.05, wd=0.3, gamma=0.2     val_loss=1.2263 val_acc=58.80%
+[cifar10] partial    lr=0.05, wd=0.3, gamma=1       val_loss=1.2080 val_acc=58.76%
+[cifar10] partial    lr=0.05, wd=0.3, gamma=5       val_loss=1.1849 val_acc=58.82%
+[cifar10] partial    lr=0.1, wd=0.3, gamma=0.05     val_loss=1.2654 val_acc=56.96%
+[cifar10] partial    lr=0.1, wd=0.3, gamma=0.2      val_loss=1.2616 val_acc=57.18%
+[cifar10] partial    lr=0.1, wd=0.3, gamma=1        val_loss=1.2367 val_acc=58.10%
+[cifar10] partial    lr=0.1, wd=0.3, gamma=5        val_loss=1.2167 val_acc=57.94%
+[cifar10] BEST partial: lr=0.05, wd=0.3, gamma=5  val_loss 1.1849
+[cifar10] twosided   lr=0.005, wd=0.3, gamma=0.05   val_loss=1.5114 val_acc=51.32%
+[cifar10] twosided   lr=0.005, wd=0.3, gamma=0.2    val_loss=1.4791 val_acc=53.92%
+[cifar10] twosided   lr=0.005, wd=0.3, gamma=1      val_loss=1.4055 val_acc=56.58%
+[cifar10] twosided   lr=0.005, wd=0.3, gamma=5      val_loss=1.2638 val_acc=59.08%
+[cifar10] twosided   lr=0.01, wd=0.3, gamma=0.05    val_loss=1.4903 val_acc=50.76%
+[cifar10] twosided   lr=0.01, wd=0.3, gamma=0.2     val_loss=1.4459 val_acc=54.02%
+[cifar10] twosided   lr=0.01, wd=0.3, gamma=1       val_loss=1.3581 val_acc=57.18%
+[cifar10] twosided   lr=0.01, wd=0.3, gamma=5       val_loss=1.2548 val_acc=58.62%
+[cifar10] twosided   lr=0.02, wd=0.3, gamma=0.05    val_loss=1.4718 val_acc=51.48%
+[cifar10] twosided   lr=0.02, wd=0.3, gamma=0.2     val_loss=1.4237 val_acc=54.16%
+[cifar10] twosided   lr=0.02, wd=0.3, gamma=1       val_loss=1.3446 val_acc=57.64%
+[cifar10] twosided   lr=0.02, wd=0.3, gamma=5       val_loss=1.2439 val_acc=59.62%
+[cifar10] twosided   lr=0.05, wd=0.3, gamma=0.05    val_loss=1.5163 val_acc=50.62%
+[cifar10] twosided   lr=0.05, wd=0.3, gamma=0.2     val_loss=1.4563 val_acc=54.38%
+[cifar10] twosided   lr=0.05, wd=0.3, gamma=1       val_loss=1.3858 val_acc=56.68%
+[cifar10] twosided   lr=0.05, wd=0.3, gamma=5       val_loss=1.2835 val_acc=58.56%
+[cifar10] twosided   lr=0.1, wd=0.3, gamma=0.05     val_loss=1.5553 val_acc=50.60%
+[cifar10] twosided   lr=0.1, wd=0.3, gamma=0.2      val_loss=1.5057 val_acc=52.14%
+[cifar10] twosided   lr=0.1, wd=0.3, gamma=1        val_loss=1.4252 val_acc=55.44%
+[cifar10] twosided   lr=0.1, wd=0.3, gamma=5        val_loss=1.3288 val_acc=57.06%
+[cifar10] BEST twosided: lr=0.02, wd=0.3, gamma=5  val_loss 1.2439
+[cifar10] schatten4  lr=0.005, wd=0.3, gamma=0.05   val_loss=1.5179 val_acc=51.90%
+[cifar10] schatten4  lr=0.005, wd=0.3, gamma=0.2    val_loss=1.5122 val_acc=53.24%
+[cifar10] schatten4  lr=0.005, wd=0.3, gamma=1      val_loss=1.4761 val_acc=55.02%
+[cifar10] schatten4  lr=0.005, wd=0.3, gamma=5      val_loss=1.3348 val_acc=56.84%
+[cifar10] schatten4  lr=0.01, wd=0.3, gamma=0.05    val_loss=1.5294 val_acc=50.80%
+[cifar10] schatten4  lr=0.01, wd=0.3, gamma=0.2     val_loss=1.5108 val_acc=53.50%
+[cifar10] schatten4  lr=0.01, wd=0.3, gamma=1       val_loss=1.4469 val_acc=56.20%
+[cifar10] schatten4  lr=0.01, wd=0.3, gamma=5       val_loss=1.3137 val_acc=57.46%
+[cifar10] schatten4  lr=0.02, wd=0.3, gamma=0.05    val_loss=1.5133 val_acc=51.30%
+[cifar10] schatten4  lr=0.02, wd=0.3, gamma=0.2     val_loss=1.4972 val_acc=53.10%
+[cifar10] schatten4  lr=0.02, wd=0.3, gamma=1       val_loss=1.4304 val_acc=56.26%
+[cifar10] schatten4  lr=0.02, wd=0.3, gamma=5       val_loss=1.2939 val_acc=57.94%
+[cifar10] schatten4  lr=0.05, wd=0.3, gamma=0.05    val_loss=1.5179 val_acc=51.78%
+[cifar10] schatten4  lr=0.05, wd=0.3, gamma=0.2     val_loss=1.4888 val_acc=53.64%
+[cifar10] schatten4  lr=0.05, wd=0.3, gamma=1       val_loss=1.4132 val_acc=55.52%
+[cifar10] schatten4  lr=0.05, wd=0.3, gamma=5       val_loss=1.2797 val_acc=58.16%
+[cifar10] schatten4  lr=0.1, wd=0.3, gamma=0.05     val_loss=1.5433 val_acc=51.10%
+[cifar10] schatten4  lr=0.1, wd=0.3, gamma=0.2      val_loss=1.4950 val_acc=53.02%
+[cifar10] schatten4  lr=0.1, wd=0.3, gamma=1        val_loss=1.4198 val_acc=56.04%
+[cifar10] schatten4  lr=0.1, wd=0.3, gamma=5        val_loss=1.2968 val_acc=57.04%
+[cifar10] BEST schatten4: lr=0.05, wd=0.3, gamma=5  val_loss 1.2797
+
+[cifar10] mean over 3 seeds:
+  muon       lr=0.02, wd=0.3                test acc 59.64 ± 0.11%   val loss 1.1721   train loss 0.4215
+  iamuon     lr=0.05, wd=0.3, gamma=5       test acc 58.61 ± 0.29%   val loss 1.2189   train loss 0.6695
+  partial    lr=0.05, wd=0.3, gamma=5       test acc 59.13 ± 0.25%   val loss 1.1905   train loss 0.6882
+  twosided   lr=0.02, wd=0.3, gamma=5       test acc 59.20 ± 0.09%   val loss 1.2479   train loss 0.5075
+  schatten4  lr=0.05, wd=0.3, gamma=5       test acc 57.67 ± 0.13%   val loss 1.2824   train loss 0.9370

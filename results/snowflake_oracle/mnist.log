@@ -1,0 +1,65 @@
+[mnist] oracle    lr=0.01, wd=0.1, gamma=0.01        val_loss=0.1096 val_acc=96.84%  median step 7.6 ms
+[mnist] oracle    lr=0.01, wd=0.1, gamma=0.05        val_loss=0.0923 val_acc=97.40%  median step 7.6 ms
+[mnist] oracle    lr=0.01, wd=0.1, gamma=0.2         val_loss=0.0761 val_acc=97.74%  median step 7.9 ms
+[mnist] oracle    lr=0.01, wd=0.1, gamma=1           val_loss=0.0662 val_acc=97.86%  median step 7.4 ms
+[mnist] oracle    lr=0.01, wd=0.1, gamma=5           val_loss=0.0642 val_acc=97.80%  median step 7.4 ms
+[mnist] oracle    lr=0.01, wd=0.1, gamma=20          val_loss=0.0693 val_acc=97.76%  median step 7.4 ms
+[mnist] oracle    lr=0.02, wd=0.1, gamma=0.01        val_loss=0.1207 val_acc=96.62%  median step 7.5 ms
+[mnist] oracle    lr=0.02, wd=0.1, gamma=0.05        val_loss=0.1069 val_acc=96.80%  median step 7.5 ms
+[mnist] oracle    lr=0.02, wd=0.1, gamma=0.2         val_loss=0.0804 val_acc=97.54%  median step 7.5 ms
+[mnist] oracle    lr=0.02, wd=0.1, gamma=1           val_loss=0.0691 val_acc=97.88%  median step 7.5 ms
+[mnist] oracle    lr=0.02, wd=0.1, gamma=5           val_loss=0.0592 val_acc=98.08%  median step 7.5 ms
+[mnist] oracle    lr=0.02, wd=0.1, gamma=20          val_loss=0.0624 val_acc=98.10%  median step 7.5 ms
+[mnist] oracle    lr=0.05, wd=0.1, gamma=0.01        val_loss=0.1451 val_acc=95.72%  median step 7.5 ms
+[mnist] oracle    lr=0.05, wd=0.1, gamma=0.05        val_loss=0.1260 val_acc=96.26%  median step 7.4 ms
+[mnist] oracle    lr=0.05, wd=0.1, gamma=0.2         val_loss=0.0931 val_acc=97.34%  median step 8.3 ms
+[mnist] oracle    lr=0.05, wd=0.1, gamma=1           val_loss=0.0682 val_acc=98.06%  median step 7.7 ms
+[mnist] oracle    lr=0.05, wd=0.1, gamma=5           val_loss=0.0607 val_acc=98.10%  median step 7.5 ms
+[mnist] oracle    lr=0.05, wd=0.1, gamma=20          val_loss=0.0603 val_acc=98.00%  median step 7.7 ms
+[mnist] oracle    lr=0.1, wd=0.1, gamma=0.01         val_loss=0.1973 val_acc=94.76%  median step 7.4 ms
+[mnist] oracle    lr=0.1, wd=0.1, gamma=0.05         val_loss=0.1579 val_acc=95.42%  median step 7.5 ms
+[mnist] oracle    lr=0.1, wd=0.1, gamma=0.2          val_loss=0.1178 val_acc=96.40%  median step 7.5 ms
+[mnist] oracle    lr=0.1, wd=0.1, gamma=1            val_loss=0.0837 val_acc=97.54%  median step 7.6 ms
+[mnist] oracle    lr=0.1, wd=0.1, gamma=5            val_loss=0.0648 val_acc=98.10%  median step 8.3 ms
+[mnist] oracle    lr=0.1, wd=0.1, gamma=20           val_loss=0.0657 val_acc=97.98%  median step 7.6 ms
+[mnist] oracle    lr=0.2, wd=0.1, gamma=0.01         val_loss=0.2999 val_acc=92.32%  median step 7.5 ms
+[mnist] oracle    lr=0.2, wd=0.1, gamma=0.05         val_loss=0.2226 val_acc=93.98%  median step 7.4 ms
+[mnist] oracle    lr=0.2, wd=0.1, gamma=0.2          val_loss=0.1391 val_acc=95.90%  median step 7.7 ms
+[mnist] oracle    lr=0.2, wd=0.1, gamma=1            val_loss=0.1008 val_acc=96.72%  median step 7.5 ms
+[mnist] oracle    lr=0.2, wd=0.1, gamma=5            val_loss=0.0776 val_acc=97.76%  median step 11.3 ms
+[mnist] oracle    lr=0.2, wd=0.1, gamma=20           val_loss=0.0742 val_acc=97.56%  median step 11.0 ms
+[mnist] BEST oracle: lr=0.02, wd=0.1, gamma=5  (558s)
+[mnist] identity  lr=0.005, wd=0.1                   val_loss=0.0566 val_acc=98.38%  median step 0.8 ms
+[mnist] identity  lr=0.005, wd=0.3                   val_loss=0.0588 val_acc=98.10%  median step 0.6 ms
+[mnist] identity  lr=0.01, wd=0.1                    val_loss=0.0601 val_acc=98.26%  median step 0.5 ms
+[mnist] identity  lr=0.01, wd=0.3                    val_loss=0.0604 val_acc=98.16%  median step 0.6 ms
+[mnist] identity  lr=0.02, wd=0.1                    val_loss=0.0737 val_acc=98.06%  median step 0.4 ms
+[mnist] identity  lr=0.02, wd=0.3                    val_loss=0.0690 val_acc=97.84%  median step 0.4 ms
+[mnist] identity  lr=0.05, wd=0.1                    val_loss=0.1207 val_acc=96.48%  median step 0.4 ms
+[mnist] identity  lr=0.05, wd=0.3                    val_loss=0.1217 val_acc=96.56%  median step 0.4 ms
+[mnist] identity  lr=0.1, wd=0.1                     val_loss=0.2264 val_acc=93.72%  median step 0.4 ms
+[mnist] identity  lr=0.1, wd=0.3                     val_loss=0.9814 val_acc=55.12%  median step 0.4 ms
+[mnist] identity  lr=0.2, wd=0.1                     val_loss=2.3026 val_acc=9.20%  median step 0.4 ms
+[mnist] identity  lr=0.2, wd=0.3                     val_loss=1.9450 val_acc=18.54%  median step 0.4 ms
+[mnist] identity  lr=0.5, wd=0.1                     val_loss=2.3026 val_acc=9.24%  median step 0.4 ms
+[mnist] identity  lr=0.5, wd=0.3                     val_loss=2.3026 val_acc=9.26%  median step 0.4 ms
+[mnist] BEST identity: lr=0.005, wd=0.1  (19s)
+[mnist] FINAL muon      seed 0 lr=0.01, wd=0.1                    val_loss=0.0487 test_acc=98.72%
+[mnist] FINAL muon      seed 1 lr=0.01, wd=0.1                    val_loss=0.0503 test_acc=98.77%
+[mnist] FINAL muon      seed 2 lr=0.01, wd=0.1                    val_loss=0.0515 test_acc=98.70%
+[mnist] FINAL est       seed 0 lr=0.05, wd=0.1, gamma=5           val_loss=0.0599 test_acc=98.54%
+[mnist] FINAL est       seed 1 lr=0.05, wd=0.1, gamma=5           val_loss=0.0591 test_acc=98.59%
+[mnist] FINAL est       seed 2 lr=0.05, wd=0.1, gamma=5           val_loss=0.0567 test_acc=98.47%
+[mnist] FINAL oracle    seed 0 lr=0.02, wd=0.1, gamma=5           val_loss=0.0592 test_acc=98.51%
+[mnist] FINAL oracle    seed 1 lr=0.02, wd=0.1, gamma=5           val_loss=0.0588 test_acc=98.48%
+[mnist] FINAL oracle    seed 2 lr=0.02, wd=0.1, gamma=5           val_loss=0.0585 test_acc=98.54%
+[mnist] FINAL identity  seed 0 lr=0.005, wd=0.1                   val_loss=0.0566 test_acc=98.54%
+[mnist] FINAL identity  seed 1 lr=0.005, wd=0.1                   val_loss=0.0573 test_acc=98.46%
+[mnist] FINAL identity  seed 2 lr=0.005, wd=0.1                   val_loss=0.0598 test_acc=98.49%
+
+[mnist] mean ± std over 3 seeds:
+  muon      lr=0.01, wd=0.1                    test acc 98.73 ± 0.04%   val loss 0.0502 ± 0.0014
+  est       lr=0.05, wd=0.1, gamma=5           test acc 98.53 ± 0.06%   val loss 0.0586 ± 0.0017
+  oracle    lr=0.02, wd=0.1, gamma=5           test acc 98.51 ± 0.03%   val loss 0.0588 ± 0.0003
+  identity  lr=0.005, wd=0.1                   test acc 98.50 ± 0.04%   val loss 0.0579 ± 0.0017
+saved results/snowflake_oracle/mnist

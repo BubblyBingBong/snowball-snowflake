@@ -1,0 +1,132 @@
+[cifar10] adamw        lr=0.0001, wd=0                  val_loss=1.3258 val_acc=54.22%
+[cifar10] adamw        lr=0.0001, wd=0.1                val_loss=1.3308 val_acc=53.96%
+[cifar10] adamw        lr=0.0001, wd=1                  val_loss=1.3305 val_acc=54.20%
+[cifar10] adamw        lr=0.0003, wd=0                  val_loss=1.2941 val_acc=56.26%
+[cifar10] adamw        lr=0.0003, wd=0.1                val_loss=1.2918 val_acc=56.26%
+[cifar10] adamw        lr=0.0003, wd=1                  val_loss=1.2717 val_acc=56.64%
+[cifar10] adamw        lr=0.001, wd=0                   val_loss=1.4799 val_acc=56.32%
+[cifar10] adamw        lr=0.001, wd=0.1                 val_loss=1.4060 val_acc=56.86%
+[cifar10] adamw        lr=0.001, wd=1                   val_loss=1.2421 val_acc=57.92%
+[cifar10] adamw        lr=0.003, wd=0                   val_loss=1.4875 val_acc=54.12%
+[cifar10] adamw        lr=0.003, wd=0.1                 val_loss=1.4227 val_acc=54.98%
+[cifar10] adamw        lr=0.003, wd=1                   val_loss=1.2606 val_acc=56.48%
+[cifar10] adamw        lr=0.01, wd=0                    val_loss=1.5819 val_acc=45.60%
+[cifar10] adamw        lr=0.01, wd=0.1                  val_loss=1.4680 val_acc=49.38%
+[cifar10] adamw        lr=0.01, wd=1                    val_loss=1.4050 val_acc=50.56%
+[cifar10] BEST adamw: lr=0.001, wd=1  (0s)
+[cifar10] muon         lr=0.005, wd=0                   val_loss=2.7318 val_acc=56.16%
+[cifar10] muon         lr=0.005, wd=0.1                 val_loss=1.7957 val_acc=57.00%
+[cifar10] muon         lr=0.005, wd=0.3                 val_loss=1.2119 val_acc=58.88%
+[cifar10] muon         lr=0.01, wd=0                    val_loss=3.3130 val_acc=55.46%
+[cifar10] muon         lr=0.01, wd=0.1                  val_loss=1.8825 val_acc=57.28%
+[cifar10] muon         lr=0.01, wd=0.3                  val_loss=1.1946 val_acc=58.94%
+[cifar10] muon         lr=0.02, wd=0                    val_loss=4.2412 val_acc=52.92%
+[cifar10] muon         lr=0.02, wd=0.1                  val_loss=1.6959 val_acc=57.64%
+[cifar10] muon         lr=0.02, wd=0.3                  val_loss=1.1638 val_acc=60.28%
+[cifar10] muon         lr=0.05, wd=0                    val_loss=2.3176 val_acc=10.16%
+[cifar10] muon         lr=0.05, wd=0.1                  val_loss=1.3998 val_acc=56.38%
+[cifar10] muon         lr=0.05, wd=0.3                  val_loss=1.1838 val_acc=58.98%
+[cifar10] muon         lr=0.1, wd=0                     val_loss=2.4111 val_acc=9.52%
+[cifar10] muon         lr=0.1, wd=0.1                   val_loss=1.3240 val_acc=55.22%
+[cifar10] muon         lr=0.1, wd=0.3                   val_loss=1.2393 val_acc=57.02%
+[cifar10] muon         lr=0.2, wd=0                     val_loss=3.0705 val_acc=9.52%
+[cifar10] muon         lr=0.2, wd=0.1                   val_loss=1.3213 val_acc=54.02%
+[cifar10] muon         lr=0.2, wd=0.3                   val_loss=1.2996 val_acc=54.22%
+[cifar10] BEST muon: lr=0.02, wd=0.3  (0s)
+[cifar10] newton_muon  lr=0.002, wd=0.1, gamma=0.2      val_loss=1.3589 val_acc=53.72%
+[cifar10] newton_muon  lr=0.002, wd=0.1, gamma=1        val_loss=1.3244 val_acc=55.52%
+[cifar10] newton_muon  lr=0.002, wd=0.1, gamma=5        val_loss=1.3311 val_acc=55.74%
+[cifar10] newton_muon  lr=0.002, wd=0.3, gamma=0.2      val_loss=1.5066 val_acc=54.32%
+[cifar10] newton_muon  lr=0.002, wd=0.3, gamma=1        val_loss=1.3231 val_acc=56.24%
+[cifar10] newton_muon  lr=0.002, wd=0.3, gamma=5        val_loss=1.2579 val_acc=57.32%
+[cifar10] newton_muon  lr=0.005, wd=0.1, gamma=0.2      val_loss=1.8004 val_acc=52.40%
+[cifar10] newton_muon  lr=0.005, wd=0.1, gamma=1        val_loss=1.9708 val_acc=53.74%
+[cifar10] newton_muon  lr=0.005, wd=0.1, gamma=5        val_loss=1.9663 val_acc=53.98%
+[cifar10] newton_muon  lr=0.005, wd=0.3, gamma=0.2      val_loss=1.4237 val_acc=54.92%
+[cifar10] newton_muon  lr=0.005, wd=0.3, gamma=1        val_loss=1.3262 val_acc=55.78%
+[cifar10] newton_muon  lr=0.005, wd=0.3, gamma=5        val_loss=1.2951 val_acc=56.90%
+[cifar10] newton_muon  lr=0.01, wd=0.1, gamma=0.2       val_loss=2.0141 val_acc=52.02%
+[cifar10] newton_muon  lr=0.01, wd=0.1, gamma=1         val_loss=2.0516 val_acc=55.32%
+[cifar10] newton_muon  lr=0.01, wd=0.1, gamma=5         val_loss=2.0397 val_acc=55.04%
+[cifar10] newton_muon  lr=0.01, wd=0.3, gamma=0.2       val_loss=1.4275 val_acc=54.56%
+[cifar10] newton_muon  lr=0.01, wd=0.3, gamma=1         val_loss=1.3282 val_acc=56.42%
+[cifar10] newton_muon  lr=0.01, wd=0.3, gamma=5         val_loss=1.2701 val_acc=58.02%
+[cifar10] newton_muon  lr=0.02, wd=0.1, gamma=0.2       val_loss=1.7892 val_acc=52.84%
+[cifar10] newton_muon  lr=0.02, wd=0.1, gamma=1         val_loss=1.8501 val_acc=55.36%
+[cifar10] newton_muon  lr=0.02, wd=0.1, gamma=5         val_loss=1.7977 val_acc=55.92%
+[cifar10] newton_muon  lr=0.02, wd=0.3, gamma=0.2       val_loss=1.3869 val_acc=55.68%
+[cifar10] newton_muon  lr=0.02, wd=0.3, gamma=1         val_loss=1.2823 val_acc=56.96%
+[cifar10] newton_muon  lr=0.02, wd=0.3, gamma=5         val_loss=1.2202 val_acc=58.44%
+[cifar10] newton_muon  lr=0.05, wd=0.1, gamma=0.2       val_loss=1.5980 val_acc=52.74%
+[cifar10] newton_muon  lr=0.05, wd=0.1, gamma=1         val_loss=1.5884 val_acc=54.92%
+[cifar10] newton_muon  lr=0.05, wd=0.1, gamma=5         val_loss=1.4678 val_acc=56.44%
+[cifar10] newton_muon  lr=0.05, wd=0.3, gamma=0.2       val_loss=1.3628 val_acc=56.74%
+[cifar10] newton_muon  lr=0.05, wd=0.3, gamma=1         val_loss=1.2455 val_acc=57.86%
+[cifar10] newton_muon  lr=0.05, wd=0.3, gamma=5         val_loss=1.1928 val_acc=58.60%
+[cifar10] newton_muon  lr=0.1, wd=0.1, gamma=0.2        val_loss=1.4148 val_acc=53.14%
+[cifar10] newton_muon  lr=0.1, wd=0.1, gamma=1          val_loss=1.3682 val_acc=55.06%
+[cifar10] newton_muon  lr=0.1, wd=0.1, gamma=5          val_loss=1.3253 val_acc=56.54%
+[cifar10] newton_muon  lr=0.1, wd=0.3, gamma=0.2        val_loss=1.3780 val_acc=55.30%
+[cifar10] newton_muon  lr=0.1, wd=0.3, gamma=1          val_loss=1.2620 val_acc=56.98%
+[cifar10] newton_muon  lr=0.1, wd=0.3, gamma=5          val_loss=1.2251 val_acc=58.02%
+[cifar10] newton_muon  lr=0.2, wd=0.1, gamma=0.2        val_loss=1.3830 val_acc=52.76%
+[cifar10] newton_muon  lr=0.2, wd=0.1, gamma=1          val_loss=1.3381 val_acc=53.52%
+[cifar10] newton_muon  lr=0.2, wd=0.1, gamma=5          val_loss=1.3057 val_acc=55.16%
+[cifar10] newton_muon  lr=0.2, wd=0.3, gamma=0.2        val_loss=1.4036 val_acc=54.84%
+[cifar10] newton_muon  lr=0.2, wd=0.3, gamma=1          val_loss=1.3132 val_acc=56.46%
+[cifar10] newton_muon  lr=0.2, wd=0.3, gamma=5          val_loss=1.2923 val_acc=55.86%
+[cifar10] BEST newton_muon: lr=0.05, wd=0.3, gamma=5  (0s)
+[cifar10] snowflake    lr=0.005, wd=0.1, gamma=0.2      val_loss=2.2941 val_acc=49.54%
+[cifar10] snowflake    lr=0.005, wd=0.1, gamma=1        val_loss=1.9984 val_acc=51.70%
+[cifar10] snowflake    lr=0.005, wd=0.1, gamma=5        val_loss=1.4441 val_acc=54.10%
+[cifar10] snowflake    lr=0.005, wd=0.1, gamma=20       val_loss=1.3052 val_acc=55.36%
+[cifar10] snowflake    lr=0.005, wd=0.3, gamma=0.2      val_loss=1.5734 val_acc=51.62%
+[cifar10] snowflake    lr=0.005, wd=0.3, gamma=1        val_loss=1.3833 val_acc=53.54%
+[cifar10] snowflake    lr=0.005, wd=0.3, gamma=5        val_loss=1.3132 val_acc=55.98%
+[cifar10] snowflake    lr=0.005, wd=0.3, gamma=20       val_loss=1.3778 val_acc=52.98%
+[cifar10] snowflake    lr=0.01, wd=0.1, gamma=0.2       val_loss=2.0379 val_acc=51.24%
+[cifar10] snowflake    lr=0.01, wd=0.1, gamma=1         val_loss=1.9621 val_acc=52.62%
+[cifar10] snowflake    lr=0.01, wd=0.1, gamma=5         val_loss=1.5756 val_acc=53.84%
+[cifar10] snowflake    lr=0.01, wd=0.1, gamma=20        val_loss=1.2965 val_acc=56.56%
+[cifar10] snowflake    lr=0.01, wd=0.3, gamma=0.2       val_loss=1.4857 val_acc=51.52%
+[cifar10] snowflake    lr=0.01, wd=0.3, gamma=1         val_loss=1.3484 val_acc=54.48%
+[cifar10] snowflake    lr=0.01, wd=0.3, gamma=5         val_loss=1.2943 val_acc=56.38%
+[cifar10] snowflake    lr=0.01, wd=0.3, gamma=20        val_loss=1.3538 val_acc=54.42%
+[cifar10] snowflake    lr=0.02, wd=0.1, gamma=0.2       val_loss=1.8677 val_acc=50.82%
+[cifar10] snowflake    lr=0.02, wd=0.1, gamma=1         val_loss=1.7908 val_acc=53.78%
+[cifar10] snowflake    lr=0.02, wd=0.1, gamma=5         val_loss=1.5287 val_acc=55.52%
+[cifar10] snowflake    lr=0.02, wd=0.1, gamma=20        val_loss=1.2898 val_acc=56.76%
+[cifar10] snowflake    lr=0.02, wd=0.3, gamma=0.2       val_loss=1.4029 val_acc=52.14%
+[cifar10] snowflake    lr=0.02, wd=0.3, gamma=1         val_loss=1.3158 val_acc=55.16%
+[cifar10] snowflake    lr=0.02, wd=0.3, gamma=5         val_loss=1.2809 val_acc=57.02%
+[cifar10] snowflake    lr=0.02, wd=0.3, gamma=20        val_loss=1.3458 val_acc=54.72%
+[cifar10] snowflake    lr=0.05, wd=0.1, gamma=0.2       val_loss=1.6062 val_acc=50.40%
+[cifar10] snowflake    lr=0.05, wd=0.1, gamma=1         val_loss=1.4648 val_acc=54.96%
+[cifar10] snowflake    lr=0.05, wd=0.1, gamma=5         val_loss=1.3225 val_acc=56.60%
+[cifar10] snowflake    lr=0.05, wd=0.1, gamma=20        val_loss=1.2288 val_acc=58.40%
+[cifar10] snowflake    lr=0.05, wd=0.3, gamma=0.2       val_loss=1.4117 val_acc=51.14%
+[cifar10] snowflake    lr=0.05, wd=0.3, gamma=1         val_loss=1.3128 val_acc=54.02%
+[cifar10] snowflake    lr=0.05, wd=0.3, gamma=5         val_loss=1.2949 val_acc=55.82%
+[cifar10] snowflake    lr=0.05, wd=0.3, gamma=20        val_loss=1.3529 val_acc=54.32%
+[cifar10] snowflake    lr=0.1, wd=0.1, gamma=0.2        val_loss=1.4676 val_acc=50.32%
+[cifar10] snowflake    lr=0.1, wd=0.1, gamma=1          val_loss=1.3475 val_acc=54.18%
+[cifar10] snowflake    lr=0.1, wd=0.1, gamma=5          val_loss=1.2603 val_acc=56.84%
+[cifar10] snowflake    lr=0.1, wd=0.1, gamma=20         val_loss=1.2255 val_acc=57.76%
+[cifar10] snowflake    lr=0.1, wd=0.3, gamma=0.2        val_loss=1.4470 val_acc=49.82%
+[cifar10] snowflake    lr=0.1, wd=0.3, gamma=1          val_loss=1.3528 val_acc=53.72%
+[cifar10] snowflake    lr=0.1, wd=0.3, gamma=5          val_loss=1.3189 val_acc=55.02%
+[cifar10] snowflake    lr=0.1, wd=0.3, gamma=20         val_loss=1.3685 val_acc=53.54%
+[cifar10] snowflake    lr=0.2, wd=0.1, gamma=0.2        val_loss=1.4764 val_acc=48.16%
+[cifar10] snowflake    lr=0.2, wd=0.1, gamma=1          val_loss=1.3570 val_acc=52.18%
+[cifar10] snowflake    lr=0.2, wd=0.1, gamma=5          val_loss=1.2639 val_acc=56.00%
+[cifar10] snowflake    lr=0.2, wd=0.1, gamma=20         val_loss=1.2615 val_acc=55.78%
+[cifar10] snowflake    lr=0.2, wd=0.3, gamma=0.2        val_loss=1.5135 val_acc=48.08%
+[cifar10] snowflake    lr=0.2, wd=0.3, gamma=1          val_loss=1.4162 val_acc=51.48%
+[cifar10] snowflake    lr=0.2, wd=0.3, gamma=5          val_loss=1.3536 val_acc=53.72%
+[cifar10] snowflake    lr=0.2, wd=0.3, gamma=20         val_loss=1.3911 val_acc=52.94%
+[cifar10] BEST snowflake: lr=0.1, wd=0.1, gamma=20  (0s)
+[cifar10] FINAL adamw        lr=0.001, wd=1                   train_loss=0.7385 val_loss=1.2421 test_loss=1.2484 test_acc=57.05%  median step 1.08 ms
+[cifar10] FINAL muon         lr=0.02, wd=0.3                  train_loss=0.3358 val_loss=1.1638 test_loss=1.1670 test_acc=59.48%  median step 2.40 ms
+[cifar10] FINAL newton_muon  lr=0.05, wd=0.3, gamma=5         train_loss=0.5062 val_loss=1.1928 test_loss=1.1984 test_acc=58.81%  median step 3.11 ms
+[cifar10] FINAL snowflake    lr=0.1, wd=0.1, gamma=20         train_loss=0.7623 val_loss=1.2255 test_loss=1.2368 test_acc=56.63%  median step 1.57 ms
+saved results/optim_compare/cifar10
