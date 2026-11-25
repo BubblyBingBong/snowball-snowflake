@@ -41,6 +41,9 @@ for var, lab, col, mk, ls in [("est", "estimated $M$", SF, "o", (0, (4, 1.5))), 
     best = {}
     for r in s["sweeps"][var]:
         g = r["cfg"]["gamma"]; best[g] = min(best.get(g, 9.0), r["val_loss"])
+    if var == "est":                           # extended damping grid (gamma 50, 100) from ext_damping.py
+        ext = json.load(open("results/paper/extended_damping.json"))["cifar10"]["snowflake"]["best_val_loss_by_gamma"]
+        best.update({float(g): v for g, v in ext.items()})
     gs = sorted(best)
     ax[1].plot(gs, [best[g] for g in gs], color=col, lw=1.4, ls=ls, marker=mk, ms=4, mec="white", mew=0.6, label=lab)
 GINF = 200.0                                   # plotted position of gamma = infinity (M = I)

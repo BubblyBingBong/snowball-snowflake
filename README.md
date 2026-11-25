@@ -6,7 +6,8 @@ layer actually receives instead:
 
 - **Snowball** whitens the layer inputs (multiplying by `C^{-1/2}` turns their distribution into a unit ball) and
   takes a Muon step in those coordinates: `dW = -eta * polar(G C^{-1/2}) C^{-1/2}`.
-  In the code it is called `iam` / `iamuon` (its earlier name, Input-Aware Muon).
+  In the code it is called `iam` / `iamuon` (its earlier name, Input-Aware Muon). Its tuned damping is very heavy
+  (gamma = 500), where it is close to Muon; as gamma -> infinity it is exactly Muon.
 - **Snowflake** bounds the root-mean-square change in the layer's outputs over the input distribution:
   `dW = -eps * G M^{-1} / sqrt(tr(G M^{-1} G^T))`, with `M = E[x x^T / ||x||^2]`.
 
@@ -19,6 +20,7 @@ Baselines: AdamW, Muon, Newton-Muon (Du & Su, arXiv 2604.01472). All experiments
 |---|---|---|
 | `optim_compare.py` | Model, data, Muon / Newton-Muon / Snowflake optimizers; hyperparameter sweeps for AdamW, Muon, Newton-Muon, Snowflake | `results/optim_compare/` |
 | `input_aware.py` | Snowball (`iamuon`) and other input-aware variants; sweep for Snowball | `results/input_aware/` |
+| `ext_damping.py` | Extends the damping grids for Snowball (up to 500) and Snowflake (up to 100); its selections are used for the final runs | `results/paper/extended_damping.json` |
 | `paper_runs.py` | Final 3-seed runs of every method at its selected configuration (Table 2 of the report) | `results/paper/{mnist,cifar10}.pt`, `summary.json` |
 | `paper_plot.py` | Loss-curve figure (Figure 1) | `results/paper/loss_curves.pdf` |
 | `mnist_muon.py` | Effective scaling / spectral norm of Muon updates on MNIST (diagnosis, hypothesis 1) | `results/final_histories.pt` |
@@ -35,7 +37,7 @@ Sweep caches (`results/**/runs/`) are not included; the scripts recreate them.
 pip install -r requirements.txt
 python optim_compare.py --dataset mnist      # and --dataset cifar10
 python input_aware.py   --dataset mnist --methods iamuon
-python paper_runs.py && python paper_plot.py
+python ext_damping.py && python paper_runs.py && python paper_plot.py
 python mnist_muon.py && python snowflake_oracle.py --dataset cifar10 && python paper_diag_plot.py
 ```
 

@@ -1,6 +1,7 @@
-"""Final 3-seed runs for the report: AdamW, Muon, Newton-Muon, IAM, Snowflake-RMS on the MLPs, at each method's
-best config from its sweep (optim_compare.py for the first four, input_aware.py for IAM). Saves full histories so the
-report figure can show mean and min-max across seeds.
+"""Final 3-seed runs for the report: AdamW, Muon, Newton-Muon, Snowball ("iam"), Snowflake on the MLPs, at each method's
+best config from its sweep (optim_compare.py, input_aware.py; Snowball and Snowflake from the extended damping grids in
+results/paper/extended_damping.json when present). Saves full histories so the report figure can show mean and min-max
+across seeds. Methods whose selected config is unchanged reuse the runs already saved in results/paper/{ds}.pt.
 
 Usage: .venv/bin/python paper_runs.py   ->  results/paper/{mnist,cifar10}.pt, results/paper/summary.json
 """
@@ -18,11 +19,20 @@ for ds in ["mnist", "cifar10"]:
     prev = json.load(open(f"results/optim_compare/{ds}/summary.json"))
     iam = json.load(open(f"results/input_aware/{ds}/summary.json"))["best"]["iamuon"]
     methods = {k: (k, prev[k]["best"], None) for k in ["adamw", "muon", "newton_muon", "snowflake"]}
+    ext = "results/paper/extended_damping.json"
+    if os.path.exists(ext):
+        e = json.load(open(ext))[ds]
+        iam, methods["snowflake"] = e["snowball"]["best"], ("snowflake", e["snowflake"]["best"], None)
     methods["iam"] = ("snowflake", iam, lambda model, c=iam: InputAware(model, "iamuon", c["lr"], c["wd"], c["gamma"]))
+    old = torch.load(f"results/paper/{ds}.pt", weights_only=False) if os.path.exists(f"results/paper/{ds}.pt") else None
     out, summary[ds] = {}, {}
     for name, (kind, cfg, mk) in methods.items():
-        out[name] = []
-        for s in SEEDS:
+        if old is not None and old["cfg"].get(name) == cfg:
+            out[name] = old["runs"][name]
+            print(f"[{ds}] {name:12s} unchanged config {cfg}, reusing saved runs", flush=True)
+        else:
+            out[name] = []
+        for s in (SEEDS if not out[name] else []):
             model, h = train(kind, cfg, data, EPOCHS[ds], seed=s, make_opt=mk)
             h["full_train_loss"], h["full_train_acc"] = evaluate(model, *data[0])
             h["test_loss"], h["test_acc"] = evaluate(model, *data[2])
