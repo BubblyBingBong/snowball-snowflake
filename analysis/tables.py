@@ -54,3 +54,6 @@ for ds in ["mnist", "cifar10"]:
           + "; held-out max " + ", ".join(f"{v['max_val']:.2f}" for v in L.values())
           + "; estimate error at step 50 " + ", ".join(f"{100 * e:.0f}%" for e in first)
           + ", at the end " + ", ".join(f"{100 * v['relerr_final']:.0f}%" for v in L.values()))
+sh = h["singular_share"]; m = sh["mean"]
+print(f"  Muon, layer {sh['layer']}, step {sh['step']}: share of ||x||^2 along top singular direction {100 * m[0]:.2f}% "
+      f"(evenly spread: {100 / len(m):.2f}%); top 250 directions {100 * m[:250].sum():.0f}%")
